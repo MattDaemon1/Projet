@@ -31,6 +31,7 @@ const LoadContentPage = async () => {
     // Ajout du contenu HTML à l'élément avec l'ID "main-page"
     document.getElementById("main-page").innerHTML = html;
 
+
     // Ajout du contenu JavaScript
     if (actualRoute.pathJS != "") {
         // Création d'une balise script
