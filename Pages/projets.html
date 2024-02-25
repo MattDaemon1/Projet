@@ -5,15 +5,18 @@
 </div>
 <div class="container">
     <div class="text-center">
-        <button class="btn btn-primary">Ajouter une photo</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionProjet">Ajouter un
+            projet</button>
     </div>
     <div class="row row-cols-2 row-cols-lg-3">
         <div class="col p-3">
             <div class="image-card text-white">
                 <img src="/image/paysage1.jpg" class="rounded w-100" />
                 <div class="action-image-buttons">
-                    <button type="button" class="btn btn-outline"><i class="bi bi-pencil-square"></i></button>
-                    <button type="button" class="btn btn-outline"><i class="bi bi-trash"></i></button>
+                    <button type="button" class="btn btn-outline" data-bs-toggle="modal"
+                        data-bs-target="#EditionProjet"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline" data-bs-toggle="modal"
+                        data-bs-target="#DeleteProjet"><i class=" bi bi-trash "></i></button>
                 </div>
                 <p class="titre-image">Titre</p>
             </div>
@@ -40,3 +43,58 @@
     <div class="text-center">
         <a href="#" class="btn btn-primary">Faire un don</a>
     </div>
+
+    <!-- Modal edition -->
+    <div class="modal fade" id="EditionProjet" tabindex="-1" aria-labelledby="EditionProjetModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="EditionProjetLabel">Edition Photo</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="NameProjectInput" class="form-label">Titre</label>
+                            <input type="text" class="form-control" id="NameProjectInput" placeholder="Nom du projet"
+                                name="Titre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="ImageInput" class="form-label">Image</label>
+                            <input type="file" class="form-control" id="ImageInput" name="Image">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary">Enregistrer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal delete -->
+    <div class="modal fade" id="DeleteProjet" tabindex="-1" aria-labelledby="DeleteProjetModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="DeleteProjetLabel">Etes-vous sûr de vouloir supprimer ce projet ?
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <p>Titre</p>>
+                        <img src="/image/paysage2.jpg" class="rounded w-100">
+                    </div>
+                    <div class="modal-footer">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger">Supprimer</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
