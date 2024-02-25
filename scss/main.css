@@ -12048,4 +12048,10 @@ p {
 
 .form-label {
   color: #76C745;
+}
+
+.alldons a {
+  display: block;
+  color: #314505;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */
