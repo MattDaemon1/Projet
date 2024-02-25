@@ -1,0 +1,64 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Don</h1>
+    </div>
+</div>
+
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="NomInput" class="form-label">Nom</label>
+            <input disabled type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="John"
+                name="Nom">
+        </div>
+        <div class="mb-3">
+            <label for="PrenomInput" class="form-label">Prénom</label>
+            <input disabled type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" value="Doe"
+                name="Prenom">
+        </div>
+        <div class="mb-3">
+            <label for="NomProjetInput" class="form-label">Nom du projet</label>
+            <input type="text" class="form-control" id="NomProjetInput" placeholder="Nom du projet" value="Votre choix"
+                name="NomProjet">
+        </div>
+        <div class="mb-3">
+            <label for="PromesseDonInput" class="form-label">Promesse de don</label>
+            <input type="number" class="form-control" id="PromesseDonInput"
+                placeholder="Quelle somme voulez-vous donner ?" value="50€" name="PromesseDon">
+        </div>
+        <div class="mb-3">
+            <label for="DateInput" class="form-label">Date</label>
+            <input type="date" class="form-control" id="DateInput" name="Date">
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="dureeChoisi" id="ponctuelRadio">
+                <label class="form-check-label" for="ponctuelRadio">
+                    Ponctuel
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="dureeChoisi" id="mensuelRadio" checked>
+                <label class="form-check-label" for="mensuelRadio">
+                    Mensuel
+                </label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="selectMontant" class="form-label">Heure</label>
+            <select class="form-select" id="selectMontant" name="Montant">
+                <option>5€</option>
+                <option>10€</option>
+                <option>20€</option>
+                <option>50€</option>
+                <option>100€</option>
+                <option>200€</option>
+                <option>500€</option>
+            </select>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Faire une promesse</button>
+            <button type="button" class="btn btn-danger">Annuler</button>
+        </div>
+    </form>
+</div>
