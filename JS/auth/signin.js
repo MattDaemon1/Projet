@@ -1,22 +1,21 @@
+
 // Définir RoleCookieName quelque part dans votre code
 const RoleCookieName = "accesstoken";
 
+// Sélection des éléments HTML
 const mailInput = document.getElementById("EmailInput");
 const passwordInput = document.getElementById("PasswordInput");
 const btnSignin = document.getElementById("btnSignin");
 
+// Ajout de l'événement au clic sur le bouton de connexion
 btnSignin.addEventListener("click", checkCredentials);
 
-// Fonction pour définir un token (à adapter selon vos besoins)
-function setToken(token) {
-    // Ici, vous pouvez définir le token dans une variable globale ou localStorage selon votre architecture
-    // Exemple pour localStorage : localStorage.setItem('token', token);
-}
-
+// Fonction pour vérifier les identifiants
 function checkCredentials() {
-    //Ici, il faudra appeler l'API pour vérifier les credentials en BDD
+    // Ici, il faudra appeler l'API pour vérifier les credentials en BDD
 
     if (mailInput.value == "test@mail.com" && passwordInput.value == "123") {
+
         //Il faudra récupérer le vrai token
         const token = "lkjsdngfljsqdnglkjsdbglkjqskjgkfjgbqslkfdgbskldfgdfgsdgf";
         setToken(token);
@@ -30,9 +29,9 @@ function checkCredentials() {
     }
 }
 
-// Fonction pour définir un cookie (assurez-vous de la sécuriser)
-function setCookie(name, value, days) {
-    const expires = new Date();
-    expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
-    document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
-}
+
+
+
+
+
+
