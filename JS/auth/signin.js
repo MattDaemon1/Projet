@@ -1,6 +1,5 @@
 
-// Définir RoleCookieName quelque part dans votre code
-const RoleCookieName = "accesstoken";
+
 
 // Sélection des éléments HTML
 const mailInput = document.getElementById("EmailInput");
