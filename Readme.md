@@ -15,7 +15,8 @@ Ce projet vise à créer un site web dynamique offrant des fonctionnalités tell
 ## Comment Utiliser
 
 1. Ouvrez le fichier `index.html` dans un navigateur web pour accéder à la page d'accueil.
-2. Naviguez vers sur le site.
+2. http://localhost:3000/
+3. Naviguez vers sur le site.
 
 ## Technologies Utilisées
 
